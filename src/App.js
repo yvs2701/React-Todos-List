@@ -9,8 +9,8 @@ function addTodo() {
 
 function App() {
   let todos = [{
-    title: "Insert your title",
-    description: "Add a description if you may want",
+    title: "Insert your todo",
+    // description: "Add a description if you may want",
     // deadline: "By 12:00pm you gotta finish it !"
   },
 ] // array of objects
