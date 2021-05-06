@@ -3,14 +3,14 @@ import React from 'react'
 export default function todo({ todo, index, del }) {
     return (
         <div className="btn-group btn-group-lg" style={{width:"100%"}}>
-            <div class="accordion-item" style={{width:"90%"}}>
-                <h2 class="accordion-header" id={`heading${index}`}>
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index}`} aria-expanded="false" aria-controls={`collapse${index}`}>
+            <div className="accordion-item" style={{width:"90%"}}>
+                <h2 className="accordion-header" id={`heading${index}`}>
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index}`} aria-expanded="false" aria-controls={`collapse${index}`}>
                         {todo.title}
                     </button>
                 </h2>
-                <div id={`collapse${index}`} class="accordion-collapse collapse" aria-labelledby={`heading${index}`} data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
+                <div id={`collapse${index}`} className="accordion-collapse collapse" aria-labelledby={`heading${index}`} data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
                         {todo.description}
                     </div>
                 </div>

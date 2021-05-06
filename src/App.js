@@ -11,16 +11,19 @@ export default function App() {
     {
       title: "Insert your todo",
       description: "Add a description if you may want",
+      // priority: false
       // deadline: "By 12:00pm you gotta finish it !"
     },
     {
-      title: "Insert your todo",
-      description: "Add a description if you may want",
+      title: "Add a title in the above input",
+      description: "A description is optional, you may or may not add it !",
+      // priority: true
       // deadline: "By 12:00pm you gotta finish it !"
     },
     {
-      title: "Insert your todo",
-      description: "Add a description if you may want",
+      title: "You can even add looooong description",
+      description: "Initially, Yoga was imparted by the Adiyogi (the first yogi), Shiva, over 15,000 years ago. It was Adiyogi who introduced to humanity the idea that one can evolve beyond one’s present level of existence. He poured his knowing into the legendary Sapta Rishis, or seven sages, who took the tremendous possibility offered by the yogic science to various parts of the world, including Asia, ancient Persia, northern Africa, and South America. It is this fundamental yet sophisticated science of elevating human consciousness that is the source of the world’s spiritual traditions, predating religion by many thousands of years. Yoga is about attaining absolute Balance, piercing Clarity, and an inexhaustible Exuberance. With this, you are immensely fit for life.",
+      // priority: false
       // deadline: "By 12:00pm you gotta finish it !"
     },
   ] // array of objects
@@ -30,18 +33,17 @@ export default function App() {
     let text = document.getElementById("exampleFormControlInput1");
     let descr = document.getElementById("exampleFormControlTextarea1");
 
-    if(text.value.trim() !== "")
-    {
+    if (text.value.trim() !== "") {
       let todoObj; // to store our new todo item
-      if(descr.value.trim() !== "")
+      if (descr.value.trim() !== "")
         todoObj = {
-          title: text.value().trim(),
-          description: descr.value().trim()
+          title: text.value.trim(),
+          description: descr.value.trim()
         };
       else
         todoObj = {
-        title: text.value().trim(),
-        description: descr.value().trim()
+          title: text.value.trim(),
+          description: "..."
         };
       setTodos([...todos, todoObj]);
     }
@@ -61,7 +63,7 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Add new={addTodo}/>
+      <Add new={addTodo} />
       <List todos={todos} del={deleteTodo} />
       <Footer />
     </div>
