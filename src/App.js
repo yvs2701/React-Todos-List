@@ -45,6 +45,9 @@ export default function App() {
           title: text.value.trim(),
           description: "..."
         };
+      
+      text.value = ""; 
+      descr.value = "";
       setTodos([...todos, todoObj]);
     }
   };
