@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function todo({ todo, index, del }) {
     return (
-        <div className="btn-group btn-group-lg" style={{width:"100%"}}>
+        <div className="btn-group btn-group-lg mb-1" style={{width:"100%"}}>
             <div className="accordion-item" style={{width:"90%"}}>
                 <h2 className="accordion-header" id={`heading${index}`}>
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index}`} aria-expanded="false" aria-controls={`collapse${index}`}>
