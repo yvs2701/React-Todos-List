@@ -20,7 +20,7 @@ Simply click the trash button, to delete a completed task
 ![image](https://user-images.githubusercontent.com/79207707/118431256-833c3000-b6f3-11eb-924e-7099a4806568.png)
 
 # UPDATES:
-## Added local storage (currently not working in static build version on gitHub pages)
+## Added local storage
 ![image](https://user-images.githubusercontent.com/79207707/118431470-107f8480-b6f4-11eb-909a-bd30680c48fe.png)
 Todo items are locally stored, however clearing browser data may wipe them out too :(
 
