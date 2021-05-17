@@ -41,3 +41,26 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+## Host React app on GitHub pages
+`After linking you app to a github repo simply follow:`
+### Install the gh-pages package as a _dev-dependency_ of the app.
+In your app directory type:
+`npm install gh-pages --save-dev`
+
+### Add some properties to the app's _package.json_ file.
+At the top-level (i.e. inside package.json > right before/after/**in the same block as** the `"name"`) add the following:
+`"homepage": "http://usrname.github.io/repo-name"`
+`usrname` name is your user-name at GitHub
+`repo-name` is the repository name that we are going to host on GitHub pages.
+
+### In the existing scripts property, add a predeploy property and a deploy property:
+`"scripts": {
+  //...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}`
+
+### Now run the following command:
+`npm run deploy`
+And you are done now your react app will be hosted on GitHub pages !
