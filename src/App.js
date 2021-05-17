@@ -55,10 +55,11 @@ export default function App() {
       
       text.value = ""; 
       descr.value = "";
-      setTodos([...todos, todoObj])
+      setTodos([...todos, todoObj], () => {    
+        // adding localStorage in callback so that item is stored only after state updates
+        window.localStorage.setItem("Todos", JSON.stringify(todos))
+      })
     }
-    // adding localStorage
-    window.localStorage.setItem("Todos", JSON.stringify(todos))
   };
 
   const deleteTodo = (removeElem) => {
@@ -69,10 +70,10 @@ export default function App() {
     setTodos(todos.filter(
       (elem) => {
         return elem !== removeElem;
-      }));
-    
-    // adding localStorage
-    window.localStorage.setItem("Todos", JSON.stringify(todos))
+      }), () => {
+          // adding localStorage in callback so that item is stored only after state updates
+          window.localStorage.setItem("Todos", JSON.stringify(todos))
+      });
   };
 
   return (
