@@ -18,7 +18,7 @@ Simply click the trash button, to delete a completed task
 ![image](https://user-images.githubusercontent.com/79207707/117329193-066ab400-aeb2-11eb-8fa6-9b4cd1ffe54e.png)
 ![image](https://user-images.githubusercontent.com/79207707/117329241-12567600-aeb2-11eb-8c44-8a4319693df7.png)
 
-
+                                                   `More features on the way :)`
 
 DEFAULT DETAILS:-
 ### Getting Started with Create React App
