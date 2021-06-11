@@ -8,7 +8,8 @@ export default function addTodo(props) {
         }}>
             <div className="mb-3" style={{ textAlign: "left" }}>
                 <label htmlFor="exampleFormControlInput1" className="form-label">Add your tasks</label>
-                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Go to the market and buy a dozen eggs." />
+                <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Go to the market and buy a dozen eggs." 
+                autoComplete="off"/>
             </div>
             <div className="mb-3" style={{ textAlign: "left" }}>
                 <label htmlFor="exampleFormControlTextarea1" className="form-label">Description</label>
